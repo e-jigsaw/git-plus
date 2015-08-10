@@ -1,6 +1,13 @@
 ## Changelog
 
-### 5.3.5
+### 5.3.3
+- #231: Shift-Enter confirms stage/unstage in dialogs
+
+### 5.3.2
+- Fix #226: remove COMMIT_EDITMSG file from repo when committing
+- Fix #228: Don't show color codes in diff when `color.ui=always`
+
+### 5.3.0
 - Fix #233 (@hotoiledgoblins)
 - Add 'Git checkout remote' to atom command palette
 - Respect `commit.template` config option
