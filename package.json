@@ -1,7 +1,7 @@
 {
   "name": "git-plus",
   "main": "./lib/git-plus",
-  "version": "5.4.7",
+  "version": "5.5.6",
   "description": "Do git things without the terminal",
   "keywords": [
     "git"
@@ -12,9 +12,11 @@
       "git-plus:add",
       "git-plus:add-all",
       "git-plus:add-all-and-commit",
+      "git-plus:add-all-commit-and-push",
       "git-plus:add-and-commit",
       "git-plus:diff-all",
       "git-plus:diff",
+      "git-plus:difftool",
       "git-plus:log",
       "git-plus:log-current-file",
       "git-plus:status",
@@ -29,6 +31,7 @@
       "git-plus:checkout-all-files",
       "git-plus:cherry-pick",
       "git-plus:commit",
+      "git-plus:commit-all",
       "git-plus:commit-amend",
       "git-plus:fetch",
       "git-plus:new-branch",
@@ -44,8 +47,16 @@
       "git-plus:unstage-files",
       "git-plus:init",
       "git-plus:run",
-      "git-plus:merge"
+      "git-plus:merge",
+      "git-plus:rebase"
     ]
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
   },
   "repository": "https://github.com/akonwi/git-plus",
   "license": "MIT",
@@ -57,6 +68,7 @@
     "fuzzaldrin": "^1.2.0",
     "underscore-plus": "1.x",
     "atom-space-pen-views": "^2.0.3",
-    "flavored-path": "0.0.8"
+    "flavored-path": "0.0.8",
+    "atom-notify": "^1.0.1"
   }
 }
