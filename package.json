@@ -1,7 +1,7 @@
 {
   "name": "git-plus",
   "main": "./lib/git-plus",
-  "version": "5.9.0",
+  "version": "5.12.0",
   "description": "Do git things without the terminal",
   "keywords": [
     "git"
@@ -48,6 +48,7 @@
       "git-plus:init",
       "git-plus:run",
       "git-plus:merge",
+      "git-plus:merge-remote",
       "git-plus:rebase"
     ]
   },
